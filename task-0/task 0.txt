@@ -1,0 +1,17 @@
+steps:
+1.download the ubuntu ios file from https://ubuntu.com/
+2.download rusfus from https://rufus.ie/en_US/ which helps in creating bootable disk
+3.download sd formator from https://www.sdcard.org/downloads/formatter/ which helps in formating your flash drive makes it ready for creating a bootable media.
+4.insert your pendrive and format it used sd formatter.
+5.after formating burn the ios image into the pendrive using rufus
+6.now shrink a free space(atleast 25gb) for ubentu use disk management tool
+7.now reboot your pc/laptop and while turning on press f10 to open boot menu and choose your pendrive in this menu.
+8.complete all the basis instrallation settings as choosing language,keyboard,disk space,time.login details etc.
+9.reboot your computer and remove the bootable media.
+10.now add an master boot record using an Easybcd tool(in windows) to access ubentu.
+	a.open easybcd and click on "add new entry"
+	b.select linux and choose "GRUB 2" in type section
+	c.click on plus button to add an entry to the windows boot menu
+11.now reboot your pc/laptop and now u can see both windows and ubentu in boot menu
+12.choose one or else windows will be selected as default after 30 sec.
+ 
